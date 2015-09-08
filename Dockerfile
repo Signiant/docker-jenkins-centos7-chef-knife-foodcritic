@@ -29,7 +29,7 @@ RUN /bin/bash -l -c "rvm use 1.9.3"
 COPY gem.packages.list /tmp/gem.packages.list
 RUN chmod +r /tmp/gem.packages.list
 
-COPY gem.packages.list /tmp/gem.packages.r21.list
+COPY gem.packages.r21.list /tmp/gem.packages.r21.list
 RUN chmod +r /tmp/gem.packages.r21.list
 
 RUN /bin/bash -l -c "gem install `cat /tmp/gem.packages.list | tr \"\\n\" \" \"`"
