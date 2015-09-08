@@ -1,4 +1,4 @@
-# centos7-chef-knife-foodcritic
+# docker-jenkins-centos7-chef-knife-foodcritic
 Container for a Jenkins build node that uses food critic and testkitchen to check chef recipes.  Also allows for promotion to a chef server.
 
 ## Variables:
