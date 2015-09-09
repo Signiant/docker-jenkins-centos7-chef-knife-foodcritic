@@ -20,6 +20,10 @@ RUN /bin/bash -l -c "curl -L get.rvm.io | bash -s stable"
 
 RUN /bin/bash -l -c "rvm install 2.1.2"
 
+#Install required gems for our promotion scripts
+COPY gem.packages.list /tmp/gem.packages.list
+RUN chmod +r /tmp/gem.packages.list
+
 COPY gem.packages.r21.list /tmp/gem.packages.r21.list
 RUN chmod +r /tmp/gem.packages.r21.list
 
