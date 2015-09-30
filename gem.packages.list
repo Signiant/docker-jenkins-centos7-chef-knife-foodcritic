@@ -2,3 +2,5 @@ chef
 knife-windows
 knife-azure
 foodcritic
+test-kitchen
+berkshelf
