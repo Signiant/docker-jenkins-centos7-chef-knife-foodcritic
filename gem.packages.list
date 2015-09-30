@@ -4,3 +4,4 @@ knife-azure
 foodcritic
 test-kitchen
 berkshelf
+kitchen-docker
